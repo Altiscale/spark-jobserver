@@ -31,6 +31,7 @@
   <modules>
     <module>akka-app</module>
     <module>job-server-api</module>
+    <module>job-server</module>
   </modules>
 
   <properties>
