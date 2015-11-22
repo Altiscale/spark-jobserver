@@ -46,6 +46,13 @@
       <version>${project.version}</version>
     </dependency>
     <dependency>
+      <groupId>com.altiscale.spark.jobserver</groupId>
+      <artifactId>job-server_2.10</artifactId>
+      <version>${project.version}</version>
+      <type>test-jar</type>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
       <groupId>org.scoverage</groupId>
       <artifactId>scalac-scoverage-runtime_2.10</artifactId>
     </dependency>
