@@ -32,6 +32,7 @@
     <module>akka-app</module>
     <module>job-server-api</module>
     <module>job-server</module>
+    <module>job-server-extras</module>
   </modules>
 
   <properties>
@@ -44,6 +45,7 @@
     <sbt.project.name>spark-jobserver</sbt.project.name>
     <slf4j.version>1.7.10</slf4j.version>
     <log4j.version>1.2.17</log4j.version>
+    <spark.version>1.5.2</spark.version>
     <hadoop.version>2.4.1</hadoop.version>
     <protobuf.version>2.5.0</protobuf.version>
     <yarn.version>${hadoop.version}</yarn.version>
@@ -122,7 +124,7 @@
     <dependency>
       <groupId>org.apache.spark</groupId>
       <artifactId>spark-core_2.10</artifactId>
-      <version>1.5.2</version>
+      <version>${spark.version}</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
