@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.altiscale.spark.jobserver</groupId>
+    <artifactId>spark-jobserver-parent_2.10</artifactId>
+    <version>0.6.1-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+
+  <groupId>com.altiscale.spark.jobserver</groupId>
+  <artifactId>job-server-tests_2.10</artifactId>
+  <packaging>jar</packaging>
+  <name>job-server-tests</name>
+
+  <description>Test jar for Spark Job Server</description>
+  <url>https://github.com/spark-jobserver/spark-jobserver</url>
+
+  <organization>
+    <name>spark.jobserver</name>
+    <url>https://github.com/spark-jobserver/spark-jobserver</url>
+  </organization>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.altiscale.spark.jobserver</groupId>
+      <artifactId>job-server-api_2.10</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.scala-lang</groupId>
+      <artifactId>scala-library</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.scoverage</groupId>
+      <artifactId>scalac-scoverage-runtime_2.10</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.scoverage</groupId>
+      <artifactId>scalac-scoverage-plugin_2.10</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.apache.spark</groupId>
+      <artifactId>spark-core_2.10</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.typesafe</groupId>
+      <artifactId>config</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-all</artifactId>
+      <version>4.0.23.Final</version>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <outputDirectory>target/scala-${scala.binary.version}/classes</outputDirectory>
+    <testOutputDirectory>target/scala-${scala.binary.version}/test-classes</testOutputDirectory>
+  </build>
+</project>
